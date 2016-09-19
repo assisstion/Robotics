@@ -163,7 +163,7 @@ float getTemp(){
   ds.reset_search();
   byte MSB = data[1];
   byte LSB = data[0];
-  float tempRead = ((MSB << 8) | LSB); //using two's compliment
+  float tempRead = ((MSB << 8) | LSB); //using two's complement
   float TemperatureSum = tempRead / 16;
   return TemperatureSum;
 }
